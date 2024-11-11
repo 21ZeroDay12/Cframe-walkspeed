@@ -1,0 +1,6 @@
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+local humanoidRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+local speed = 0.1
+while task.wait() do 
+    humanoidRootPart.CFrame = humanoidRootPart.CFrame + humanoid.MoveDirection * speed
+end
